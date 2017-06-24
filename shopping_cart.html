@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>购物车</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/chief.css" />
+	</head>
+	<body style="background:rgba(215,215,215,.5);">
+		
+		<div id="car1" class="container-fluid bg_white pst_re">
+			<span id="idselect" class="glyphicon car_select1 bbb" aria-hidden="true"></span>
+			<span class="car_img"></span>
+			<span class="car_pos_a">
+				<p class="like_label mg_b">韩都衣舍秋冬装新款女装长袖...</p>
+				<p class="like_cost1">¥200.00</p>
+				<div>
+					<div class="car_car">
+						<div id="plus2" class="car_quan">+</div>
+						<span id="carcount2" class="car_count">1</span>
+						<div id="subtract2" class="car_quan">-</div>
+					</div>
+					<div class="ash">
+						<span class="ash-bin"></span>
+						<span id="remove1" class="like_label1">删除</span>
+					</div>
+				</div>
+			</span>
+		</div>
+		
+		<div id="car2" class="container-fluid bg_white pst_re bd_t">
+			<!--<span class="car_select1"></span>-->
+			<span id="idselect1" class="glyphicon car_select1 bbb" aria-hidden="true"></span>
+			<span class="car_img"></span>
+			<span class="car_pos_a">
+				<p class="like_label mg_b">韩都衣舍秋冬装新款女装长袖...</p>
+				<p class="like_cost1">¥200.00</p>
+				<div>
+					<div class="car_car">
+						<div id="plus1" class="car_quan">+</div>
+						<span id="carcount" class="car_count">1</span>
+						<div id="subtract1" class="car_quan">-</div>
+					</div>
+					<div class="ash">
+						<span class="ash-bin"></span>
+						<span id="remove2" class="like_label1">删除</span>
+					</div>
+				</div>
+			</span>
+		</div>
+		
+		<div class=" pst_fl">
+			<!--结算-->
+			<div class="container-fluid bg_white">
+				<div class="row">
+						<div class="col-xs-3 col-sm-3 col-md-3 p0 car_hg center">
+							<!--<span id="select" class="car_select1 otcl_mld"></span>-->
+							<span id="select" class="glyphicon car_select1 otcl_mld" aria-hidden="true"></span>
+
+							<span class="like_label otcl_mld mg_l0">全选</span>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6 p0 car_hg">
+							<span class="like_label otcl_mld">合计：</span>
+							<span class="like_cost1 otcl_mld mg_l0">¥200.00</span>
+						</div>
+						<div class="col-xs-3 col-sm-3 col-md-3 p0">
+							<a href="confirm_an_order.html">
+								<div class="bottom_service">结算（1）</div>
+							</a>
+						</div>
+				</div>
+			</div>
+		
+			<!--底部导航-->
+			<div class="container-fluid bg_white bd_t">
+				<div class="row">
+				    <a href="index.html">
+						<div class="col-xs-3 col-sm-3 col-md-3 p0 bottom_center1 ">
+							<span class="nav_ico1"></span>
+							<p class="bottom_car_name">首页</p>
+						</div>
+					</a>
+				    <a href="classify.html">
+						<div class="col-xs-3 col-sm-3 col-md-3 p0 bottom_center1">
+							<span class="nav_ico2"></span>
+							<p class="bottom_car_name">分类</p>
+						</div>
+					</a>
+				 	<a href="shopping_cart.html">
+						<div class="col-xs-3 col-sm-3 col-md-3 p0 bottom_center1">
+							<span class="nav_ico3_2"></span>
+							<p class="bottom_car_name_2">购物车</p>
+						</div>
+					</a>
+				    <a href="personal_center.html">
+						<div class="col-xs-3 col-sm-3 col-md-3 p0 bottom_center1">
+							<span class="nav_ico4"></span>
+							<p class="bottom_car_name">我</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+			var car = $(".bbb");
+			
+			car.click(function(){
+				$(this).toggleClass("glyphicon-ok");
+//				$(this).css('background','rgb(255,100,150)')
+			})
+			console.log(car)
+			
+			
+			
+			$('#remove1').on('click',function(){
+				$('#car1').remove()
+			})
+			$('#remove2').on('click',function(){
+				$('#car2').remove()
+			})
+			
+			
+//			选择增减
+			$('#plus2').on('click',function(){
+				var $car=$('#carcount2').html()
+				$car++;
+				$('#carcount2').html($car);
+			})
+			$('#subtract2').on('click',function(){
+				var $car2=$('#carcount2').html();
+				if($car2<=1){
+					$('#carcount2').html($car2);
+				}else{
+					$car2--;
+					$('#carcount2').html($car2);	
+				}	
+			})
+			$('#plus1').on('click',function(){
+				var $car=$('#carcount').html()
+				$car++;
+				$('#carcount').html($car);
+			})
+			$('#subtract1').on('click',function(){
+				var $car1=$('#carcount').html();
+				if($car1<=1){
+					$('#carcount').html($car1);
+				}else{
+					$car1--;
+					$('#carcount').html($car1);	
+				}	
+			})
+		
+//			全选
+			/*$('#select').on('click',function(){
+				var $sel=$('#select').css('background');
+				if($sel=='#ccc'){
+						$("#select").css('background','rgb(255,100,150)');
+						$("#select").addClass('glyphicon-ok');
+						console.log(2)
+					}else{
+						console.log(1)
+//						$("#select").css('background','rgb(255,100,150)');
+						$("#select").addClass('glyphicon-ok');
+//						$("#idselect").css('background','rgb(255,100,150)');
+						$("#idselect").addClass('glyphicon-ok');
+//						$("#idselect1").css('background','rgb(255,100,150)');
+						$("#idselect1").addClass('glyphicon-ok');
+					}
+				
+			})*/
+			$('#select').click(function(){
+				
+				$('.car_select1').toggleClass("glyphicon-ok");
+			})
+		</script>
+	</body>
+</html>

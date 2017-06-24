@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>商城</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/masterfile.css" />
+	</head>
+	<body style="background:rgba(215,215,215,.5);">
+		
+		<div class="container-fluid top_top">
+		</div>
+		
+		<!--搜索栏-->
+		<div class="container-fluid p0 white hunt_top">
+			<div class="top">
+			    <div class="top_left">
+			    	<a class="underline" href="">
+			  	    	<span class="location"></span>
+			  	    </a>
+			  	    <span class="location_toponymy">广州</span>
+			    </div>
+			    <div class="top_in">
+				  	<span class="hunt">
+				  		<div class="hunt_case">
+				  			<a class="underline" href="">
+					  			<span class="seek">
+					  					<img class="hunt_img" src="img/4.png" alt="" />
+					  			</span>
+				  			</a>
+				  			<input type="" class="hunt_input" placeholder="请输入搜索商品">
+				  		</div>
+				  	</span>
+			  	</div>
+			    <div class="top_right">
+			    	<a class="underline" href="">
+			    		<span class="word"></span>
+			    	</a>
+			    </div>
+			</div>
+  		</div>
+  		<!--轮播图-->
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			</ol>
+			
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+				    <img class="slideshow" src="img/8.png" alt="...">   
+				</div>
+				<div class="item">
+				    <img class="slideshow" src="img/8.png" alt="...">
+				</div>
+				<div class="item">
+				    <img class="slideshow" src="img/8.png" alt="...">
+				</div>
+			</div>
+			
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			    <span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			    <span class="sr-only">Next</span>
+			</a>
+		</div>
+		<!--好物推荐，达人推荐-->
+		<div class="container-fluid pd p0 white">
+  			<div class="row1">
+			    <div class="row_left">
+			    	<a href="recommend.html#top">
+			    		<img class="slideshow" src="img/9.png" alt="" />
+			    	</a>
+			    </div>
+			   <div class="row_in"></div>
+			    <div class="row_right">
+			    	<a href="expert.html">
+			    		<img class="slideshow" src="img/10.png" alt="" />
+			    	</a>
+			    </div>
+			</div>
+		</div>
+		<!--明星同款，时尚潮流-->
+		<div class="container-fluid p0 mg_top">
+  			<div class="row1 hg">
+			    <div class="row_left white row_bd_r">
+			    	<a class="a_left_img a_underline" href="">
+			    		<div class="row_left_div">
+				    		<h4 class="row_left_h4">明星同款</h4>
+				    		<p class="row_left_p">Desire</p>
+				    		<p class="row_left_p1">全球潮流同款</p>
+				    		<p class="row_left_p1">一三五日上新</p>
+				    	</div>
+			    	</a>
+			    </div>
+			    <!--<div class="row_in"></div>-->
+			    <div class="row_right white row_bd_l">
+			    	<a class="a_right_img" href="">
+			    		<div class="row_left_div">
+				    		<h4 class="row_right_h4">时尚潮流</h4>
+				    		<p class="row_right_p">Fashion</p>
+				    		<p class="row_left_p1">新款时尚潮流</p>
+				    		<p class="row_left_p1">好货不间断</p>
+				    	</div>
+			    	</a>
+			    </div>
+			</div>
+		</div>
+		
+		<!--秒杀-->
+		<div class="container-fluid p0 mg_top white">
+			<div class="row1 p0">
+			    <div class="col-xs-8 col-md-8 col-sm-8 aligning_center  aligning_mg_l">
+			    	<img src="img/14.png" alt="" />
+			    	<span class="row_left_h4 seckill_font aligning_center">秒杀</span>
+			    	<span id="hours" class="aligning_hous aligning_wh"></span>
+			    	<b>:</b>
+			    	<span id="minutes" class="aligning_minute aligning_wh"></span>
+			    	<b>:</b>
+			    	<span id="seconds" class="aligning_second aligning_wh"></span>
+			    </div>
+			    <div class="col-xs-4 col-md-4 col-sm-4 p0 aligning_mg">
+			    	<a href="">
+				    	<div class="aligning_right">
+				    		全场低价起售
+				    	</div>
+				    </a>
+			    </div>
+			</div>	
+		</div>
+		<div class="container-fluid white p0 pd_top" style="overflow: hidden;">
+			<div class="container-fluid1 white p0 pd_top" style="width:440px;">
+				<div class="seckill_1">
+					<a href="shop_details.html">
+						<div class="hot_sale_img1">
+							<div class="hot_sale1">热卖</div>
+						</div>
+						<p class="seckill_cost margin_bottom">
+							<span class="glyphicon glyphicon-jpy" aria-hidden="true"></span>
+							<span>39.00</span>
+						</p>
+						<del>
+							<p class="seckill_cost1">¥129</p>
+						</del>
+					</a>
+				</div>
+				<div class="seckill_2">
+					<a href="shop_details.html">
+						<div class="hot_sale_img2">
+							<div class="hot_sale2">实惠</div>
+						</div>
+						<p class="seckill_cost margin_bottom">
+							<span class="glyphicon glyphicon-jpy" aria-hidden="true"></span>
+							<span>59.00</span>
+						</p>
+						<del>
+							<p class="seckill_cost1">¥129</p>
+						</del>
+					</a>
+				</div>
+				<div class="seckill_3">
+					<a href="shop_details.html">
+						<div class="hot_sale_img3">
+							<div class="hot_sale3">推荐</div>
+						</div>
+						<p class="seckill_cost margin_bottom">
+							<span class="glyphicon glyphicon-jpy" aria-hidden="true"></span>
+							<span>109.00</span>
+						</p>
+						<del>
+							<p class="seckill_cost1">¥129</p>
+						</del>
+					</a>
+				</div>
+				<div class="seckill_4">
+					<a href="shop_details.html">
+						<div class="hot_sale_img4">
+							<div class="hot_sale4">热卖</div>
+						</div>
+						<p class="seckill_cost margin_bottom">
+							<span class="glyphicon glyphicon-jpy" aria-hidden="true"></span>
+							<span>39.00</span>
+						</p>
+						<del>
+							<p class="seckill_cost1">¥129</p>
+						</del>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<!--帅气风尚，潮流前线-->
+		<div class="container-fluid p0 bd_top">
+  			<div class="row1 hg">
+			    <div class="row_left white row_bd_r">
+			    	<a class="a_left_img1" href="">
+			    		<div class="row_left_div">
+				    		<h4 class="row_left_h41">帅气风尚</h4>
+				    		<p class="row_left_pp">Chock</p>
+				    		<p class="row_left_p1">全球潮流同款</p>
+				    		<p class="row_left_p1">一三五日上新</p>
+				    	</div>
+			    	</a>
+			    </div>
+			  
+			    <div class="row_right white row_bd_l">
+			    	<a class="a_right_img1" href="">
+			    		<div class="row_left_div">
+				    		<h4 class="row_right_h41">潮流前线</h4>
+				    		<p class="row_right_pp">Fashion</p>
+				    		<p class="row_left_p1">新款时尚潮流</p>
+				    		<p class="row_left_p1">好货不间断</p>
+				    	</div>
+			    	</a>
+			    </div>
+			</div>
+		</div>
+		
+		<!--惠想新年-->
+		<div class="container-fluid p0 pd">
+			<a href="">
+				<img class="new" src="img/32.png" alt="" />
+			</a>
+		</div>
+		<!--发现好店-->
+		<div class="container-fluid p0 white">
+			<div class="row1 p0">
+			    <div class="col-xs-7 col-md-7 col-sm-7 aligning_mg_l">
+			    	<img class="taste_good" src="img/41.png" alt="" />
+			    	<span class="row_left_h4 seckill_font aligning_center">发现好店</span>
+			    </div>
+			    <div class="col-xs-5 col-md-5 col-sm-5 p0 aligning_mg">
+			    	<a href="">
+				    	<div class="aligning_right1">
+				    		你的中意尽在此
+				    	</div>
+				    </a>
+			    </div>
+			</div>	
+		</div>
+		<div class="container-fluid p0 white" style="padding-bottom:40px">
+			<a href="">
+				<div class="taste_good_outer">
+					
+					<div class="taste_good_outer1">	
+						<span class="taste_good_name1">BEAUTI</span>
+						<div class="taste_good_ranking1">No.1</div>
+					</div>
+					<div class="taste_good_outer2">
+						<span class="taste_good_name2">CM服装</span>
+						<div class="taste_good_ranking2">No.2</div>
+					</div>
+					<div class="taste_good_outer3">
+						<span class="taste_good_name3">Earth</span>
+						<div class="taste_good_ranking3">No.3</div>
+					</div>	
+					<div class="taste_good_outer4">
+						<span class="taste_good_name4">On&On</span>
+						<div class="taste_good_ranking4">No.4</div>
+					</div>
+					<div class="taste_good_outer5">
+						<span class="taste_good_name5">asos服装</span>
+						<div class="taste_good_ranking5">No.5</div>
+					</div>	
+					
+				</div>
+			</a>
+		</div>
+		
+		<!--猜你喜欢-->
+		<div class="like">
+			<div class="you_like">猜你喜欢</div>
+		</div>
+		
+		<div class="container-fluid p1">
+			<div class="row1  ">
+				<div class="col-xs-6 col-sm-6 col-md-6 white p0 p1 like_mg_r">
+					<a class="like1 like_block" href=""></a>
+					<a href="">
+						<p class="like_label">D韩版高领仿貂绒保暖毛衣esire</p>
+					</a>		
+					<a href="">
+						<span class="like_cost">¥39.00</span>
+					</a>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6 white p0 p1">
+					<a class="like2 like_block" href=""></a>
+					<a href="">
+						<p class="like_label">D韩版高领仿貂绒保暖毛衣esire</p>
+					</a>		
+					<a href="">
+						<span class="like_cost">¥39.00</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid p1">
+			<div class="row1  ">
+				<div class="col-xs-6 col-sm-6 col-md-6 white p0 p1 like_mg_r">
+					<a class="like3 like_block" href=""></a>
+					<a href="">
+						<p class="like_label">D韩版高领仿貂绒保暖毛衣esire</p>
+					</a>		
+					<a href="">
+						<span class="like_cost">¥39.00</span>
+					</a>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6 white p0 p1">
+					<a class="like4 like_block" href=""></a>
+					<a href="">
+						<p class="like_label">D韩版高领仿貂绒保暖毛衣esire</p>
+					</a>		
+					<a href="">
+						<span class="like_cost">¥39.00</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid p1">
+			<div class="row1  ">
+				<div class="col-xs-6 col-sm-6 col-md-6 white p0 p1 like_mg_r">
+					<a class="like5 like_block" href=""></a>
+					<a href="">
+						<p class="like_label">D韩版高领仿貂绒保暖毛衣esire</p>
+					</a>		
+					<a href="">
+						<span class="like_cost">¥39.00</span>
+					</a>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6 white p0 p1">
+					<a class="like6 like_block" href=""></a>
+					<a href="">
+						<p class="like_label">D韩版高领仿貂绒保暖毛衣esire</p>
+					</a>		
+					<a href="">
+						<span class="like_cost">¥39.00</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid p1">
+			<div class="row1  ">
+				<div class="col-xs-6 col-sm-6 col-md-6 white p0 p1 like_mg_r">
+					<a class="like1 like_block" href=""></a>
+					<a href="">
+						<p class="like_label">D韩版高领仿貂绒保暖毛衣esire</p>
+					</a>		
+					<a href="">
+						<span class="like_cost">¥39.00</span>
+					</a>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6 white p0 p1">
+					<a class="like2 like_block" href=""></a>
+					<a href="">
+						<p class="like_label">D韩版高领仿貂绒保暖毛衣esire</p>
+					</a>		
+					<a href="">
+						<span class="like_cost">¥39.00</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid p1">
+			<div class="row1  ">
+				<div class="col-xs-6 col-sm-6 col-md-6 white p0 p1 like_mg_r">
+					<a class="like3 like_block" href=""></a>
+					<a href="">
+						<p class="like_label">D韩版高领仿貂绒保暖毛衣esire</p>
+					</a>		
+					<a href="">
+						<span class="like_cost">¥39.00</span>
+					</a>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6 white p0 p1">
+					<a class="like4 like_block" href=""></a>
+					<a href="">
+						<p class="like_label">D韩版高领仿貂绒保暖毛衣esire</p>
+					</a>		
+					<a href="">
+						<span class="like_cost">¥39.00</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid p1">
+			<div class="row1  ">
+				<div class="col-xs-6 col-sm-6 col-md-6 white p0 p1 like_mg_r">
+					<a class="like5 like_block" href=""></a>
+					<a href="">
+						<p class="like_label">D韩版高领仿貂绒保暖毛衣esire</p>
+					</a>		
+					<a href="">
+						<span class="like_cost">¥39.00</span>
+					</a>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6 white p0 p1">
+					<a class="like6 like_block" href=""></a>
+					<a href="">
+						<p class="like_label">D韩版高领仿貂绒保暖毛衣esire</p>
+					</a>		
+					<a href="">
+						<span class="like_cost">¥39.00</span>
+					</a>
+				</div>
+			</div>
+		</div>
+<!--		<nav aria-label="Page navigation">
+		  <ul class="pagination">
+		    <li>
+		      <a href="#" aria-label="Previous">
+		        <span aria-hidden="true">&laquo;</span>
+		      </a>
+		    </li>
+		    <li><a href="#">1</a></li>
+		    <li><a href="#">2</a></li>
+		    <li><a href="#">3</a></li>
+		    <li><a href="#">4</a></li>
+		    <li><a href="#">5</a></li>
+		    <li>
+		      <a href="#" aria-label="Next">
+		        <span aria-hidden="true">&raquo;</span>
+		      </a>
+		    </li>
+		  </ul>
+		</nav>-->
+
+		<!--底部导航栏-->
+		<div class="container-fluid white p0 nav_bottom">
+			<div class="row1 p0">
+				
+				<div class="col-xs-3 col-sm-3 col-md-3 p0">
+				   	<a href="">
+				   	    <span class="nav_ico1"></span>
+				   	    <p class="nav_state">首页</p>
+				   	</a>
+				</div>
+			   
+			    <div class="col-xs-3 col-sm-3 col-md-3 p0">
+			    	<a href="classify.html">
+			   	        <span class="nav_ico2"></span>
+			   	        <p class="nav_state1">分类</p>
+			   	    </a>
+			    </div>
+			    <div class="col-xs-3 col-sm-3 col-md-3 p0">
+			   	    <a href="shopping_cart.html">
+			   	        <span class="nav_ico3"></span>
+			   	        <p class="nav_state1">购物车</p>
+			   	    </a>
+			    </div>
+			    <div class="col-xs-3 col-sm-3 col-md-3 p0">
+			   		<a href="personal_center.html">
+			   	        <span class="nav_ico4"></span>
+			   	        <p class="nav_state1">我</p>
+			   	    </a>
+			    </div>
+			</div>
+		</div>
+		
+		<div class="container-fluid bottom_bottm"></div>
+
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+			var i=0;
+			function clock(){
+				var oHur=document.getElementById("hours");
+				var oMin=document.getElementById("minutes");
+				var oScd=document.getElementById("seconds");
+				
+				var timet20=null;
+				function toStr(n){
+					if(n<10){
+						return "0"+n;
+					}else{
+						return ""+n;
+					}
+				}
+				i--;
+				if(i<0){
+					i=14400000;
+				}
+				var h=toStr(parseInt(i/1000/60/60%24));
+				var m=toStr(parseInt(i/1000/60%60));
+				var s=toStr(i%60);
+				
+		
+				oHur.innerHTML=h;
+				oMin.innerHTML=m;
+				oScd.innerHTML=s;
+			}
+			timer20=setInterval(clock,1000);
+		</script>
+	</body>
+</html>
+
